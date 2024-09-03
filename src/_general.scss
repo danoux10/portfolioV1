@@ -1,0 +1,203 @@
+body {
+  background: silver;
+  color: black;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $mediumDark;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $light;
+  }
+}
+//link header
+header#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  #menuToggle {
+    input {
+      &:checked ~{
+        #hamburger{
+          span{
+            background: $light;
+          }
+        }
+      }
+    }
+  }
+
+  #hamburger {
+    span {
+      background: $dark;
+    }
+  }
+
+  #menu {
+    background: $dark;
+    ul{
+      color: white;
+    }
+    a{
+      color: $positive;
+      &.me{
+        cursor: default;
+
+      }
+    }
+  }
+}
+
+//link main
+main{
+  section{
+    &:nth-child(2n){
+      background: rgba($negative,.2);
+    }
+    .title{
+      margin: 0 0 .5% 0;
+
+      &:after{
+        content: '';
+        display: block;
+        height: .1em;
+        background: $negative;
+        width: 100%;
+      }
+    }
+  }
+  section#a_propos{
+    article{
+      div#info{
+        div#info_content{
+          span{
+            p.question{
+              font-weight: bolder;
+              &:after{
+                content: ' ?';
+              }
+              &:before{
+                content: '';
+              }
+            }
+            p.reponce{
+              font-style: italic;
+              &:after{
+                content: '.';
+              }
+            }
+          }
+        }
+      }
+      div#text_content{
+        p{
+          text-align: justify;
+          text-indent: 1%;
+        }
+      }
+    }
+  }
+  section#competence{
+    padding: .5% 0 0 0;
+    .competence-content{
+      width: 100%;
+      article{
+        width: 50%;
+        h3{
+          text-decoration: underline;
+        }
+        .competence{
+          width: 80%;
+          height: 100%;
+        }
+        .connu, .en_cours{
+          width: 100%;
+        }
+        .separator{
+          margin: 1% 0;
+          background: $dark;
+          height: .1em;
+          width: 50%;
+        }
+        .en_cours{
+        }
+      }
+    }
+  }
+  //link portfolio
+  section#portfolio{
+    article{
+      height: 80vh;
+      overflow: scroll;
+      position: relative;
+      width: 98%;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom: 2px solid $light;
+      &::-webkit-scrollbar{
+        width: 5px;
+        height: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $mediumDark;
+        border-radius: 50px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(black,.2);
+      }
+      .card-projet{
+        background: $dark;
+        color: $positive;
+        box-shadow: 2px 2px 2px $light;
+        border-radius: 10px;
+        .title-card{
+          font-family: cursive;
+          &:before,&:after{
+            content: '●';
+            color: $light;
+            text-shadow: 2px 1px 5px $positive;
+          }
+        }
+        .image-content{
+          img{
+            width: 100%;
+          }
+        }
+        .text-content{
+          width: 95%;
+          margin: .5% 0;
+          p{
+            text-align: justify;
+          }
+        }
+        span.link-content{
+          display: flex;
+          a{
+            color:$positive;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer#footbar{
+  background: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0 0 0;
+  ul{
+    width: 100%;
+    a{
+      color: $positive;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+//color
+$dark: #1A374D;
+$mediumDark: #406882;
+$mediumLight: #6998AB;
+$light: #6998AB;
+
+//
+$negative: #000000;
+$positive: #ffffff;
+
+@mixin sizeHerit{
+  width: inherit;
+  height: inherit;
+}

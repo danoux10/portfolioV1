@@ -1,0 +1,80 @@
+//class util
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-around {
+  justify-content: space-around;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.content-start{
+  justify-content: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.separator {
+  display: block;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mb-1{
+  margin-bottom: 2%;
+}
+
+.black{
+  color:black;
+}
+
+.underline{
+  text-decoration: underline;
+}
